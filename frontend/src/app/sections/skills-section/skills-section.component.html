@@ -1,0 +1,24 @@
+<section
+  #skillsRoot
+  id="skills"
+  class="section section--surface"
+  aria-labelledby="skills-heading"
+>
+  <div class="section__inner">
+    <h2 id="skills-heading">Skills</h2>
+    <p class="section__lede">
+      Self-assessed emphasis for frontend delivery; bars animate once this section enters the viewport.
+    </p>
+    <ul class="skill-list">
+      <li *ngFor="let skill of skills" class="skill-row">
+        <span class="skill-row__name">{{ skill.name }}</span>
+        <div class="skill-bar" role="presentation">
+          <div
+            class="skill-bar__fill"
+            [style.width.%]="skillsVisible ? skill.level : 0"
+          ></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,35 +1,51 @@
-import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { TestBed } from "@angular/core/testing";
+import { AppModule } from "./app.module";
+import { AppComponent } from "./app.component";
 
-describe('AppComponent', () => {
+describe("AppComponent", () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [AppModule],
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it("should create the app", () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(fixture.componentInstance).toBeTruthy();
   });
 
-  it(`should have as title 'portfolio-frontend'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('portfolio-frontend');
-  });
-
-  it('should render title', () => {
+  it("should show your name and role in the hero", () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('portfolio-frontend app is running!');
+    const el = fixture.nativeElement as HTMLElement;
+    expect(el.textContent).toContain("Isaac Palomo Salas");
+    expect(el.textContent).toContain("Frontend-Focused Full-Stack Developer");
+  });
+
+  it("should list skills", () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.skills.length).toBeGreaterThan(0);
+    expect(app.skills.some((s) => s.name === "Angular")).toBe(true);
+  });
+
+  it("composes layout and section components", () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const el = fixture.nativeElement as HTMLElement;
+    expect(el.querySelector("app-site-header")).toBeTruthy();
+    expect(el.querySelector("app-hero-section")).toBeTruthy();
+    expect(el.querySelector("app-about-section")).toBeTruthy();
+    expect(el.querySelector("app-projects-section")).toBeTruthy();
+    expect(el.querySelector("app-skills-section")).toBeTruthy();
+    expect(el.querySelector("app-contact-section")).toBeTruthy();
+    expect(el.querySelector("app-site-footer")).toBeTruthy();
+  });
+
+  it("exposes main landmark for skip-link target", () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const el = fixture.nativeElement as HTMLElement;
+    expect(el.querySelector("main#main")).toBeTruthy();
   });
 });

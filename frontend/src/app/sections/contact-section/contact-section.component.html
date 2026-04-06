@@ -1,0 +1,29 @@
+<section id="contact" class="section" aria-labelledby="contact-heading">
+  <div class="section__inner section__inner--narrow">
+    <h2 id="contact-heading">Contact</h2>
+    <p class="section__lede">Get in touch — I’ll open your default mail client with this message prefilled.</p>
+    <form class="contact-form" (ngSubmit)="onContactSubmit()" #f="ngForm">
+      <label class="field">
+        <span class="field__label">Name</span>
+        <input type="text" name="name" required [(ngModel)]="contact.name" autocomplete="name" />
+      </label>
+      <label class="field">
+        <span class="field__label">Email</span>
+        <input type="email" name="email" required [(ngModel)]="contact.email" autocomplete="email" />
+      </label>
+      <label class="field">
+        <span class="field__label">Message</span>
+        <textarea name="message" rows="5" required [(ngModel)]="contact.message"></textarea>
+      </label>
+      <button type="submit" class="btn btn--primary" [disabled]="!f.valid">Send message</button>
+    </form>
+    <ul class="social-links">
+      <li>
+        <a [href]="linkedinUrl" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </li>
+      <li>
+        <a [href]="githubUrl" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </li>
+    </ul>
+  </div>
+</section>
