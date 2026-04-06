@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec-integration",
+    "types": ["jasmine"]
+  },
+  "files": ["src/test-integration.ts", "src/polyfills.ts"],
+  "include": ["src/integration/**/*.spec.ts", "src/**/*.d.ts"]
+}

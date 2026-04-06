@@ -1,0 +1,8 @@
+# Local installs and builds (root .gitignore also covers node_modules/dist)
+**/node_modules/
+**/dist/
+
+# Playwright
+**/test-results/
+**/playwright-report/
+**/playwright/.cache/
