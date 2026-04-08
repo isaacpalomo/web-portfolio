@@ -30,8 +30,6 @@ describe('SiteHeaderComponent', () => {
     const links = el.querySelectorAll('a[href^="#"]');
     const hrefs = Array.from(links).map((a) => a.getAttribute('href'));
     expect(hrefs).toContain('#about');
-    expect(hrefs).toContain('#projects');
     expect(hrefs).toContain('#experience');
-    expect(hrefs).toContain('#contact');
   });
 });

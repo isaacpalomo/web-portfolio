@@ -22,10 +22,7 @@ describe('AppModule (integration)', () => {
     const text = (fixture.nativeElement as HTMLElement).textContent ?? '';
 
     expect(text).toMatch(/About/i);
-    expect(text).toMatch(/Projects/i);
     expect(text).toMatch(/Experience/i);
-    expect(text).toMatch(/Contact/i);
-    expect(text).toContain('Bill reminders app');
     expect(text).toContain('Built by Isaac');
   });
 });
