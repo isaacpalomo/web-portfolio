@@ -1,28 +1,58 @@
-import { Component } from "@angular/core";
-import { Skill } from "./models/skill.model";
+import { Component } from '@angular/core';
+import { Experience } from './models/experience.model';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  readonly brandName = "Isaac Palomo Salas";
-  readonly role = "Frontend-Focused Full-Stack Developer";
-  readonly tagline = "Building robust and user-friendly web applications";
+  readonly brandName = 'Isaac Palomo Salas';
+  readonly role = 'Frontend-Focused Full-Stack Developer';
+  readonly tagline = 'Building robust and user-friendly web applications';
 
   /** Replace with your public URLs and email before publishing. */
-  linkedinUrl = "https://www.linkedin.com/in/your-profile";
-  githubUrl = "https://github.com/your-username";
-  resumePdfPath = "assets/resume.pdf";
-  contactEmail = "your.email@example.com";
+  linkedinUrl = 'https://www.linkedin.com/in/your-profile';
+  githubUrl = 'https://github.com/your-username';
+  resumePdfPath = 'assets/resume.pdf';
+  contactEmail = 'your.email@example.com';
 
-  skills: Skill[] = [
-    { name: "Angular", level: 92 },
-    { name: "JavaScript / TypeScript", level: 88 },
-    { name: "HTML / CSS", level: 90 },
-    { name: "Node.js", level: 72 },
-    { name: "SQL", level: 68 },
-    { name: "QA & test automation", level: 80 },
+  experiences: Experience[] = [
+    {
+      company: 'Enhance Fitness',
+      start: '2022',
+      end: 'Present',
+      location: 'Dubai, UAE',
+      workMode: 'Remote',
+      summary:
+        'Backoffice and website development for a fitness and wellness company that offers personal training sessions, including yoga, MMA and swimming',
+    },
+    {
+      company: 'Build IT Solutions',
+      start: '2019',
+      end: '2022',
+      location: 'Mexico City, Mexico',
+      workMode: 'Remote',
+      summary:
+        'Web and mobile development for a real estate app, pricing tool for shipping materials and a company insights web application',
+    },
+    {
+      company: "Mexico's Industry Suppliers Chain",
+      start: '2017',
+      end: '2019',
+      location: 'Juárez City, Mexico',
+      workMode: 'On-site',
+      summary:
+        'Support for a web application that serves business gatherings and a catalog of products and services',
+    },
+    {
+      company: 'Lear Electrical Systems',
+      start: '2015',
+      end: '2017',
+      location: 'Juárez City, Mexico',
+      workMode: 'On-site',
+      summary:
+        'Backoffice development and creation of production reports with SQL Server Reporting Services (SSRS)',
+    },
   ];
 }

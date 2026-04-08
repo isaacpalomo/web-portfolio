@@ -9,7 +9,7 @@ import { SiteFooterComponent } from './layout/site-footer/site-footer.component'
 import { HeroSectionComponent } from './sections/hero-section/hero-section.component';
 import { AboutSectionComponent } from './sections/about-section/about-section.component';
 import { ProjectsSectionComponent } from './sections/projects-section/projects-section.component';
-import { SkillsSectionComponent } from './sections/skills-section/skills-section.component';
+import { ExperienceSectionComponent } from './sections/experience-section/experience-section.component';
 import { ContactSectionComponent } from './sections/contact-section/contact-section.component';
 
 @NgModule({
@@ -20,15 +20,11 @@ import { ContactSectionComponent } from './sections/contact-section/contact-sect
     HeroSectionComponent,
     AboutSectionComponent,
     ProjectsSectionComponent,
-    SkillsSectionComponent,
-    ContactSectionComponent
+    ExperienceSectionComponent,
+    ContactSectionComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,0 +1,26 @@
+<section
+  id="experience"
+  class="section section--surface"
+  aria-labelledby="experience-heading"
+>
+  <div class="section__inner">
+    <h2 id="experience-heading">Experience</h2>
+    <ul class="experience-list">
+      <li *ngFor="let exp of experiences" class="experience-card">
+        <div class="experience-card__logo" aria-hidden="true">
+          <span class="experience-card__initials">{{ getInitials(exp.company) }}</span>
+        </div>
+        <div class="experience-card__content">
+          <div class="experience-card__header">
+            <h3 class="experience-card__company">{{ exp.company }}</h3>
+            <p class="experience-card__meta">
+              <span class="experience-card__dates">{{ exp.start }} → {{ exp.end }}</span>
+              <span class="experience-card__location">{{ exp.location }} ({{ exp.workMode }})</span>
+            </p>
+          </div>
+          <p class="experience-card__summary">{{ exp.summary }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

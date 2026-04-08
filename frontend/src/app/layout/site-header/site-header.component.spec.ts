@@ -1,7 +1,7 @@
-import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { SiteHeaderComponent } from "./site-header.component";
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { SiteHeaderComponent } from './site-header.component';
 
-describe("SiteHeaderComponent", () => {
+describe('SiteHeaderComponent', () => {
   let fixture: ComponentFixture<SiteHeaderComponent>;
   let component: SiteHeaderComponent;
 
@@ -14,24 +14,24 @@ describe("SiteHeaderComponent", () => {
     component = fixture.componentInstance;
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it("derives brandShort from first name + Palomo", () => {
-    component.brandName = "Isaac Palomo Salas";
-    expect(component.brandShort).toBe("Isaac Palomo");
+  it('derives brandShort from first name + Palomo', () => {
+    component.brandName = 'Isaac Palomo Salas';
+    expect(component.brandShort).toBe('Isaac Palomo');
   });
 
-  it("renders nav anchors to page sections", () => {
-    component.brandName = "Isaac Palomo Salas";
+  it('renders nav anchors to page sections', () => {
+    component.brandName = 'Isaac Palomo Salas';
     fixture.detectChanges();
     const el = fixture.nativeElement as HTMLElement;
     const links = el.querySelectorAll('a[href^="#"]');
-    const hrefs = Array.from(links).map((a) => a.getAttribute("href"));
-    expect(hrefs).toContain("#about");
-    expect(hrefs).toContain("#projects");
-    expect(hrefs).toContain("#skills");
-    expect(hrefs).toContain("#contact");
+    const hrefs = Array.from(links).map((a) => a.getAttribute('href'));
+    expect(hrefs).toContain('#about');
+    expect(hrefs).toContain('#projects');
+    expect(hrefs).toContain('#experience');
+    expect(hrefs).toContain('#contact');
   });
 });
