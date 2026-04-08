@@ -19,7 +19,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const el = fixture.nativeElement as HTMLElement;
     expect(el.textContent).toContain('Isaac Palomo Salas');
-    expect(el.textContent).toContain('Frontend-Focused Full-Stack Developer');
+    expect(el.textContent).toContain('Full-Stack Developer');
   });
 
   it('should list experiences', () => {

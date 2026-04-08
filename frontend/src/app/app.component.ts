@@ -8,7 +8,7 @@ import { Experience } from './models/experience.model';
 })
 export class AppComponent {
   readonly brandName = 'Isaac Palomo Salas';
-  readonly role = 'Frontend-Focused Full-Stack Developer';
+  readonly role = 'Full-Stack Developer';
   readonly tagline = 'Building robust and user-friendly web applications';
 
   /** Replace with your public URLs and email before publishing. */
