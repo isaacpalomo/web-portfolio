@@ -14,7 +14,7 @@ export class AppComponent {
   /** Replace with your public URLs and email before publishing. */
   linkedinUrl = 'https://www.linkedin.com/in/your-profile';
   githubUrl = 'https://github.com/your-username';
-  resumePdfPath = 'assets/resume.pdf';
+  resumePdfPath = '/assets/Isaac-Palomo-Salas-Resume.pdf';
   contactEmail = 'your.email@example.com';
 
   experiences: Experience[] = [

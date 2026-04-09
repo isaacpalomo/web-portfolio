@@ -22,7 +22,7 @@ describe('HeroSectionComponent', () => {
     component.brandName = 'Test User';
     component.role = 'Engineer';
     component.tagline = 'Ship quality UI';
-    component.resumePdfPath = 'assets/cv.pdf';
+    component.resumePdfPath = '/assets/Isaac-Palomo-Salas-Resume.pdf';
     fixture.detectChanges();
 
     const el = fixture.nativeElement as HTMLElement;
