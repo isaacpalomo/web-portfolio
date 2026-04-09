@@ -121,8 +121,13 @@ a {
   background: var(--color-accent);
   color: #fff;
 
+  &:visited {
+    color: #fff;
+  }
+
   &:hover:not(:disabled) {
     background: var(--color-accent-hover);
+    color: #fff;
   }
 }
 
@@ -131,7 +136,12 @@ a {
   color: var(--color-accent);
   border-color: var(--color-accent);
 
+  &:visited {
+    color: var(--color-accent);
+  }
+
   &:hover:not(:disabled) {
     background: var(--color-accent-soft);
+    color: var(--color-accent-hover);
   }
 }
