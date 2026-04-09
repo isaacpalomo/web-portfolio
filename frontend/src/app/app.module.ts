@@ -8,6 +8,7 @@ import { SiteFooterComponent } from './layout/site-footer/site-footer.component'
 import { HeroSectionComponent } from './sections/hero-section/hero-section.component';
 import { AboutSectionComponent } from './sections/about-section/about-section.component';
 import { ExperienceSectionComponent } from './sections/experience-section/experience-section.component';
+import { ContactSectionComponent } from './sections/contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ExperienceSectionComponent } from './sections/experience-section/experi
     HeroSectionComponent,
     AboutSectionComponent,
     ExperienceSectionComponent,
+    ContactSectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

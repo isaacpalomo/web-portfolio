@@ -12,10 +12,10 @@ export class AppComponent {
   readonly tagline = 'Building robust and user-friendly web applications';
 
   /** Replace with your public URLs and email before publishing. */
-  linkedinUrl = 'https://www.linkedin.com/in/your-profile';
-  githubUrl = 'https://github.com/your-username';
+  linkedinUrl = 'https://www.linkedin.com/in/isaac-salas-48576a1a8/';
+  githubUrl = 'https://github.com/isaacpalomo';
   resumePdfPath = '/assets/Isaac-Palomo-Salas-Resume.pdf';
-  contactEmail = 'your.email@example.com';
+  contactEmail = 'hello@isaacpalomo.com';
 
   experiences: Experience[] = [
     {

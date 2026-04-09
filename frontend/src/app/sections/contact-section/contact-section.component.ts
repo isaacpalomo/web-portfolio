@@ -1,29 +1,21 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: "app-contact-section",
-  templateUrl: "./contact-section.component.html",
-  styleUrls: ["./contact-section.component.scss"],
+  selector: 'app-contact-section',
+  templateUrl: './contact-section.component.html',
+  styleUrls: ['./contact-section.component.scss'],
 })
 export class ContactSectionComponent {
-  @Input() linkedinUrl = "";
-  @Input() githubUrl = "";
-  @Input() contactEmail = "your.email@example.com";
+  @Input() heading = 'Contact';
+  @Input() lede = 'Open to full-time roles and freelance opportunities.';
 
-  contact = {
-    name: "",
-    email: "",
-    message: "",
-  };
+  @Input() linkedinUrl = '';
+  @Input() githubUrl = '';
+  @Input() contactEmail = 'hello@isaacpalomo.com';
 
-  buildMailtoHref(): string {
-    const { name, email, message } = this.contact;
-    const subject = encodeURIComponent(`Portfolio: message from ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name} <${email}>`);
-    return `mailto:${this.contactEmail}?subject=${subject}&body=${body}`;
-  }
+  @Input() resumePdfPath = '';
 
-  onContactSubmit(): void {
-    window.location.href = this.buildMailtoHref();
+  get mailtoHref(): string {
+    return `mailto:${this.contactEmail}`;
   }
 }
