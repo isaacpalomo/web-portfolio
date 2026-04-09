@@ -20,6 +20,7 @@ export class AppComponent {
   experiences: Experience[] = [
     {
       company: 'Enhance Fitness',
+      logo: '/assets/enhance.png',
       start: '2022',
       end: 'Present',
       location: 'Dubai, UAE',
@@ -29,6 +30,7 @@ export class AppComponent {
     },
     {
       company: 'Build IT Solutions',
+      logo: '/assets/buildit.png',
       start: '2019',
       end: '2022',
       location: 'Mexico City, Mexico',
@@ -38,6 +40,7 @@ export class AppComponent {
     },
     {
       company: "Mexico's Industry Suppliers Chain",
+      logo: '/assets/capim.png',
       start: '2017',
       end: '2019',
       location: 'Juárez City, Mexico',
@@ -47,6 +50,7 @@ export class AppComponent {
     },
     {
       company: 'Lear Electrical Systems',
+      logo: '/assets/lear.png',
       start: '2015',
       end: '2017',
       location: 'Juárez City, Mexico',
