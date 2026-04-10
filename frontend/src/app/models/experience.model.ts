@@ -5,5 +5,5 @@ export interface Experience {
   end: string;
   location: string;
   workMode: string;
-  summary: string;
+  bulletPoints: string[];
 }

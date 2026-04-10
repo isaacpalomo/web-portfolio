@@ -9,7 +9,8 @@ import { Experience } from './models/experience.model';
 export class AppComponent {
   readonly brandName = 'Isaac Palomo Salas';
   readonly role = 'Full-Stack Developer';
-  readonly tagline = 'Building robust and user-friendly web applications';
+  readonly tagline =
+    'Angular & Modern Web Technologies | QA Automation | Internal Tools & Platform Development';
 
   /** Replace with your public URLs and email before publishing. */
   linkedinUrl = 'https://www.linkedin.com/in/isaac-salas-48576a1a8/';
@@ -22,11 +23,14 @@ export class AppComponent {
       company: 'Enhance Fitness',
       logo: '/assets/enhance.png',
       start: '2022',
-      end: 'Present',
+      end: '2026',
       location: 'Dubai, UAE',
       workMode: 'Remote',
-      summary:
-        'Backoffice and website development for a fitness and wellness company that offers personal training sessions, including yoga, MMA and swimming',
+      bulletPoints: [
+        'Built and maintained Angular-based backoffice and customer-facing applications supporting scheduling, booking, and trainer management workflows',
+        'Designed and integrated RESTful APIs in Java to support core business processes across scheduling and operational systems',
+        'Contributed to QA automation using Playwright, improving test coverage and stabilizing CI execution for application workflows',
+      ],
     },
     {
       company: 'Build IT Solutions',
@@ -35,8 +39,11 @@ export class AppComponent {
       end: '2022',
       location: 'Mexico City, Mexico',
       workMode: 'Remote',
-      summary:
-        'Web and mobile development for a real estate app, pricing tool for shipping materials and a company insights web application',
+      bulletPoints: [
+        'Developed web and mobile applications using Angular and Ionic for real estate and logistics platforms',
+        'Implemented backend services and APIs supporting pricing tools and business analytics features',
+        'Collaborated on full-stack delivery of client-facing and internal applications across multiple projects',
+      ],
     },
     {
       company: "Mexico's Industry Suppliers Chain",
@@ -45,8 +52,10 @@ export class AppComponent {
       end: '2019',
       location: 'Juárez City, Mexico',
       workMode: 'On-site',
-      summary:
-        'Support for a web application that serves business gatherings and a catalog of products and services',
+      bulletPoints: [
+        'Developed and maintained a PHP and MySQL-based platform for business networking and supplier catalogs',
+        'Implemented and extended features for managing product and service listings within the platform',
+      ],
     },
     {
       company: 'Lear Electrical Systems',
@@ -55,8 +64,10 @@ export class AppComponent {
       end: '2017',
       location: 'Juárez City, Mexico',
       workMode: 'On-site',
-      summary:
-        'Backoffice development and creation of production reports with SQL Server Reporting Services (SSRS)',
+      bulletPoints: [
+        'Developed internal reporting solutions using SQL Server Reporting Services (SSRS)',
+        'Assisted in backend development tasks using .NET and SQL Server',
+      ],
     },
   ];
 }

@@ -30,7 +30,9 @@
               >
             </p>
           </div>
-          <p class="experience-card__summary">{{ exp.summary }}</p>
+          <ul class="experience-card__bullet-points">
+            <li *ngFor="let point of exp.bulletPoints">{{ point }}</li>
+          </ul>
         </div>
       </li>
     </ul>
