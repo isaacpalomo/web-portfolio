@@ -22,8 +22,8 @@ export class AppComponent {
     {
       company: 'Enhance Fitness',
       logo: '/assets/enhance.png',
-      start: 'Feb 2022',
-      end: 'May 2026',
+      start: '2022',
+      end: '2026',
       location: 'Remote',
       workMode: 'Remote',
       bulletPoints: [
