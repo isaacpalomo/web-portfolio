@@ -24,7 +24,7 @@ export class AppComponent {
       logo: '/assets/enhance.png',
       start: '2022',
       end: '2026',
-      location: 'Remote',
+      location: '',
       workMode: 'Remote',
       bulletPoints: [
         'Developed and maintained Playwright end-to-end automated tests for Angular-based web applications',
@@ -39,7 +39,7 @@ export class AppComponent {
       logo: '/assets/buildit.png',
       start: '2019',
       end: '2022',
-      location: 'Mexico City, Mexico',
+      location: '',
       workMode: 'Remote',
       bulletPoints: [
         'Developed web and mobile applications using Angular and Ionic for real estate and logistics platforms',
