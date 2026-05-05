@@ -8,9 +8,9 @@ import { Experience } from './models/experience.model';
 })
 export class AppComponent {
   readonly brandName = 'Isaac Palomo Salas';
-  readonly role = 'Full-Stack Developer';
+  readonly role = 'QA Automation Engineer | Full-Stack Developer';
   readonly tagline =
-    'Angular & Modern Web Technologies | QA Automation | Internal Tools & Platform Development';
+    'Playwright (TypeScript) | E2E & Regression Testing | CI/CD Validation | Angular + Spring Boot';
 
   /** Replace with your public URLs and email before publishing. */
   linkedinUrl = 'https://www.linkedin.com/in/isaac-salas-48576a1a8/';
@@ -22,14 +22,16 @@ export class AppComponent {
     {
       company: 'Enhance Fitness',
       logo: '/assets/enhance.png',
-      start: '2022',
-      end: '2026',
-      location: 'Dubai, UAE',
+      start: 'Feb 2022',
+      end: 'May 2026',
+      location: 'Remote',
       workMode: 'Remote',
       bulletPoints: [
-        'Built and maintained Angular-based backoffice and customer-facing applications supporting scheduling, booking, and trainer management workflows',
-        'Designed and integrated RESTful APIs in Java to support core business processes across scheduling and operational systems',
-        'Contributed to QA automation using Playwright, improving test coverage and stabilizing CI execution for application workflows',
+        'Developed and maintained Playwright end-to-end automated tests for Angular-based web applications',
+        'Validated critical user workflows including scheduling, booking, and trainer management features',
+        'Investigated CI pipeline failures and analyzed logs to identify and fix failing Playwright tests',
+        'Collaborated with developers to identify, reproduce, and resolve frontend and backend defects',
+        'Contributed to full-stack feature development using Angular and Spring Boot',
       ],
     },
     {
@@ -46,11 +48,13 @@ export class AppComponent {
       ],
     },
     {
-      company: "Mexico's Industry Suppliers Chain",
+      company: 'Cadena de Proveedores de la Industria en México',
       logo: '/assets/capim.png',
       start: '2017',
       end: '2019',
-      location: 'Juárez City, Mexico',
+
+      location: 'Ciudad Juárez, México',
+
       workMode: 'On-site',
       bulletPoints: [
         'Developed and maintained a PHP and MySQL-based platform for business networking and supplier catalogs',
@@ -62,7 +66,7 @@ export class AppComponent {
       logo: '/assets/lear.png',
       start: '2015',
       end: '2017',
-      location: 'Juárez City, Mexico',
+      location: 'Ciudad Juárez, México',
       workMode: 'On-site',
       bulletPoints: [
         'Developed internal reporting solutions using SQL Server Reporting Services (SSRS)',
