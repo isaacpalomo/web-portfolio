@@ -13,7 +13,7 @@ export class AppComponent {
     'Playwright (TypeScript) | E2E & Regression Testing | CI/CD Validation | Angular + Spring Boot';
 
   /** Replace with your public URLs and email before publishing. */
-  linkedinUrl = 'https://www.linkedin.com/in/isaac-salas-48576a1a8/';
+  linkedinUrl = 'https://www.linkedin.com/in/isaac-palomo-salas/';
   githubUrl = 'https://github.com/isaacpalomo';
   resumePdfPath = '/assets/Isaac-Palomo-Salas-Resume.pdf';
   contactEmail = 'hello@isaacpalomo.com';
